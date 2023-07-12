@@ -1,0 +1,44 @@
+{
+  "name": "fschmid-dev/sso-service-bundle",
+  "description": "tbd",
+  "type": "symfony-bundle",
+  "authors": [
+    {
+      "name": "FSchmid",
+      "email": "info@fschmid.dev"
+    }
+  ],
+  "license": "MIT",
+  "require": {
+    "php": ">=8.1",
+    "doctrine/orm": "^2.14",
+    "fschmid-dev/redirect-exception-bundle": "^1.0.0",
+    "lexik/jwt-authentication-bundle": "^2.16",
+    "symfony/event-dispatcher": "6.3.*",
+    "symfony/flex": "^2",
+    "symfony/framework-bundle": "6.3.*",
+    "symfony/http-client": "6.3.*",
+    "symfony/http-kernel": "6.3.*",
+    "symfony/property-access": "6.3.*",
+    "symfony/serializer": "6.3.*"
+  },
+  "require-dev": {
+    "roave/security-advisories": "dev-latest"
+  },
+  "autoload": {
+    "psr-4": {
+      "FSchmidDev\\SSOServiceBundle\\": "src/"
+    }
+  },
+  "repositories": [
+    {
+      "type": "git",
+      "url": "git@github.com:fschmid-dev/redirect-exception-bundle.git"
+    }
+  ],
+  "config": {
+    "allow-plugins": {
+      "symfony/flex": false
+    }
+  }
+}

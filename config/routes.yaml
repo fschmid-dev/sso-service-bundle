@@ -1,0 +1,19 @@
+app_login:
+  controller: FSchmidDev\SSOServiceBundle\Controller\SSOController::login
+  path: /sso/login
+
+app_register:
+  controller: FSchmidDev\SSOServiceBundle\Controller\SSOController::register
+  path: /sso/register
+
+app_logout:
+  controller: FSchmidDev\SSOServiceBundle\Controller\SSOController::logout
+  path: /sso/logout
+
+app_token:
+  controller: FSchmidDev\SSOServiceBundle\Controller\SSOController::token
+  path: /sso/token
+
+app_account:
+  controller: FSchmidDev\SSOServiceBundle\Controller\SSOController::account
+  path: /sso/account

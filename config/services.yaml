@@ -1,0 +1,17 @@
+services:
+  # default configuration for services in *this* file
+  _defaults:
+    autowire: true      # Automatically injects dependencies in your services.
+    autoconfigure: true # Automatically registers your services as commands, event subscribers, etc.
+
+  FSchmidDev\SSOServiceBundle\Controller\SSOController:
+    class: FSchmidDev\SSOServiceBundle\Controller\SSOController
+
+  fschmid_dev_sso_service.event_subscriber.check_user_token_subscriber:
+    class: FSchmidDev\SSOServiceBundle\EventSubscriber\CheckUserTokenSubscriber
+
+  fschmid_dev_sso_service.security.authenticator:
+    class: FSchmidDev\SSOServiceBundle\Security\Authenticator
+
+  FSchmidDev\SSOServiceBundle\SSO\UserData:
+    class: FSchmidDev\SSOServiceBundle\SSO\UserData
